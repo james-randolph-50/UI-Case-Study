@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../App.css';
 
 class ProductOffers extends Component {
 
@@ -17,7 +18,18 @@ class ProductOffers extends Component {
         }
     }
 
-    
+    render() {
+        const offers = this.state.data ? this.state.data.Offers : null;
+        const price = offers ? offers[0].OfferPrice[0].formattedPriceValue : null;
+        const priceQualifier = offers ? offers[0].OfferPrice[0].priceQualifier : null;
+
+        return (
+            <div className="product-offers">
+                <div className="formatted-price">{price}</div>
+                <div className="price-qualifier">{priceQualifier}</div>
+            </div>
+        )
+    }
 }
 
 export default ProductOffers;
