@@ -18,7 +18,25 @@ class ProductHighlights extends Component {
         }
     }
 
-    
+    getFeatureList = ((itemDescription) => {
+        return itemDescription[0].features.map((feature, index) => (
+            <li key={index}>{renderHTML(feature)}</li>
+        ))
+    })
+
+    render() {
+        const itemDescription = this.state.data ? this.state.data.itemDescription : null;
+        const featureList = itemDescription ? this.getFeatureList(itemDescription) : null;
+
+        return (
+            <div className="product-highlights-container">
+              <div className="product-highlights-title">product highlights</div>
+              <ul className="product-features">
+                {featureList}
+              </ul>
+            </div>
+          )
+    }
 }
 
 export default ProductHighlights;
