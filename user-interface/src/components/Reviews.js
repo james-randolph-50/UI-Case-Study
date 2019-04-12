@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import Moment from 'react-moment';
 
-class ProductReviews extends Component {
+class Reviews extends Component {
 
   constructor(props) {
     super(props);
@@ -74,4 +74,4 @@ class ProductReviews extends Component {
 
 }
 
-export default ProductReviews;
+export default Reviews;
