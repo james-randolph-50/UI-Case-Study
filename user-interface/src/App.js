@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Promos from './components/Promos';
+import ProductHighlights from './components/ProductHighlights';
+import Reviews from './components/Reviews';
+import PurchaseOptions from './components/PurchaseOptions';
+import ProductOffers from './components/ProductOffers';
 
 class App extends Component {
   render() {

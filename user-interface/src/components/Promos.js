@@ -24,7 +24,17 @@ class Promos extends Component {
         ))
     })
     
+    render() {
+        const promos = this.state.data ? this.state.data.Promotions : null;
+        const promoList = promos ? this.getPromoList(promos) : null;
     
-}
-
-export default Promos;
+        return (
+          <ul className="promotions">
+            {promoList}
+          </ul>
+        )
+      }
+    
+    }
+    
+    export default Promos;
