@@ -29,17 +29,13 @@ class PurchaseOptions extends Component {
             return (
                 <div>
                     <div className="purchase-section">
-                        <div className="purchase-item">
-                            <button className="pickup-in-store">{pickupInStore}</button>
+                            <button className="buy-button" id="pickup-in-store">{pickupInStore}</button>
+                            <button className="buy-button" id="add-to-cart">{addToCart}</button> 
                             <p>find in a store</p>
-                        </div> 
-                        <div className="purchase-item">
-                            <button className="add-to-cart">{addToCart}</button>
-                        </div>
                     </div>
                         <div className="return-policy">
-                            <h3>Returns</h3>
-                            <p>This item must be returned within 30 days of the ship date. See <strong>return policy</strong> for details. Prices, promotions, styles and availability may vary by store and online.</p>
+                            <h3 className="return-header">returns</h3>
+                            <p className="return-description">This item must be returned within 30 days of the ship date. See <strong>return policy</strong> for details. Prices, promotions, styles and availability may vary by store and online.</p>
                         </div>
                         <div className="share-buttons">
                             <button className="gray-button">ADD TO REGISTRY</button>

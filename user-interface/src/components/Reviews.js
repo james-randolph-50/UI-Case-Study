@@ -48,11 +48,12 @@ class Reviews extends Component {
 
 
     return (
+    <div>
+    <div className="overall-info">
+      <div className="overall-stars">{overallRating} overall</div>
+      <div className="all-reviews">view all {totalReviews} reviews</div>
+    </div>
       <div className="customer-review-container">
-        <div className="overall-info">
-          <div className="overall-stars">{overallRating} overall</div>
-          <div className="all-reviews">view all {totalReviews} reviews</div>
-        </div>
         <div className="pro-con-info">
           <div className="pro-con-row">
             <div className="pro-con-label">PRO</div>
@@ -69,6 +70,7 @@ class Reviews extends Component {
         </div>
 
       </div>
+    </div>
     )
   }
 

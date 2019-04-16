@@ -27,7 +27,7 @@ class SelectedProductContainer extends Component {
                 return null;
             }
             return (
-                <div className="images"></div>
+                <div className="images">Images: {images.length}</div>
             )
         }
 
@@ -38,9 +38,7 @@ class SelectedProductContainer extends Component {
                 src={primaryImage}
                 alt={title}
               />
-              <AlternateImages
-                images={altImages}
-              />
+              <AlternateImages images={altImages}/>
             </div>
           )
         }
