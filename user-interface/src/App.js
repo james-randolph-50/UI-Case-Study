@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import itemJsonData from './item-data.json';
 import Promos from './components/Promos';
@@ -7,6 +6,7 @@ import ProductHighlights from './components/ProductHighlights';
 import Reviews from './components/Reviews';
 import PurchaseOptions from './components/PurchaseOptions';
 import ProductOffers from './components/ProductOffers';
+import SelectedProductContainer from './components/SelectedProductContainer';
 
 class App extends Component {
 

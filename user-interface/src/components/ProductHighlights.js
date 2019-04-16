@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import renderHTML from 'react-render-html';
+// import renderHTML from 'react-render-html';
 
 class ProductHighlights extends Component {
 
@@ -21,7 +21,7 @@ class ProductHighlights extends Component {
 
     getFeatureList = ((itemDescription) => {
         return itemDescription[0].features.map((feature, index) => (
-            <li key={index}>{renderHTML(feature)}</li>
+            <li key={index}>{feature}</li>
         ))
     })
 
