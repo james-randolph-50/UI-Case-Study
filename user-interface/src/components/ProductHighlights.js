@@ -21,7 +21,7 @@ class ProductHighlights extends Component {
 
   getFeatureList = ((itemDescription) => {
     return itemDescription[0].features.map((feature, index) => (
-      <li key={index}>{ feature }</li>
+      <li key={index}> { feature }</li>
     ))
   })
 
