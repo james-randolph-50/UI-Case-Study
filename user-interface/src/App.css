@@ -1,5 +1,47 @@
+
+.selected-product {
+
+}
+
 /* Reviews Styling */
 
 .customer-review-container {
   background-color: lightgrey;
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pro-con-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.pro-con-row {
+  margin-right: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pro-con-sublabel {
+  font-size: 0.8em;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.review-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-title {
+  font-size:0.7em;
+  font-weight: 500;
+}
+
+.review-body {
+  font-size: 0.8em;
+  font-weight: 400;
 }
