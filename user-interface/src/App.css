@@ -1,5 +1,25 @@
 
-.selected-product {
+/* Product Highlights */
+
+.product-highlights-container {
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-highlights-title {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.product-features {
+  margin-top: 1em;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-features li {
 
 }
 
@@ -44,4 +64,9 @@
 .review-body {
   font-size: 0.8em;
   font-weight: 400;
+}
+
+.review-screen-name {
+  font-size: 0.8em;
+  color: blue;
 }
