@@ -31,8 +31,18 @@ class App extends Component {
     return (
       <div className="product-container">
         <div className="product-info-item">
-          <SelectedProductContainer productData={this.state.allData}
-          selected={this.state.selectedIndex} />
+          <SelectedProductContainer productData={this.state.allData} selected={this.state.selectedIndex} />
+        </div>
+
+        <div className="product-info-item product-group">
+          <ProductOffers productData={this.state.allData} selected={this.state.selectedIndex} />
+          <Promos productData={this.state.allData} selected={this.state.selectedIndex} />
+          <PurchaseOptions productData={this.state.allData} selected={this.state.selectedIndex} />
+          <ProductHighlights productData={this.state.allData} selected={this.state.selectedIndex} />
+        </div>
+
+        <div className="product-info-item">
+          <Reviews productData={this.state.allData} selected={this.state.selectedIndex} />
         </div>
       </div>
     );
