@@ -1,3 +1,22 @@
+/* Main Product Info */
+
+/* Price */
+
+.product-offers {
+  display: flex;
+  align-items: baseline;
+  margin-left: 1em;
+}
+
+.formatted-price {
+  font-size: 1.3em;
+  margin-right: 1em;
+  font-weight: 700;
+}
+
+.price-qualifier {
+  margin-right: auto;
+}
 
 /* Product Highlights */
 
@@ -22,6 +41,30 @@
 .product-features li {
 
 }
+
+/* Promos */
+
+.promotions {
+  margin: 10px;
+  list-style-type: circle;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+}
+
+.promotions li {
+  color: red;
+}
+
+/* Purchase Option buttons */
+
+.purchase-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
 
 /* Reviews Styling */
 
