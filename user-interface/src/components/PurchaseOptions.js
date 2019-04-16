@@ -21,15 +21,32 @@ class PurchaseOptions extends Component {
         render() {
             const pCCode = this.state.data ? parseInt(this.state.data.purchasingChannelCode, 10) : null;
             const addToCartEnabled = Number.isInteger(pCCode) ? (pCCode === 0 || pCCode === 1) : null;
-            const addToCart = addToCartEnabled ? "Add to Cart" : "Not Available";
+            const addToCart = addToCartEnabled ? "ADD TO CART" : "Not Available";
         
             const pickupInStoreEnabled = Number.isInteger(pCCode) ? (pCCode === 0 || pCCode === 2) : null;
-            const pickupInStore = pickupInStoreEnabled ? "Pickup in Store" : "Not Available";
+            const pickupInStore = pickupInStoreEnabled ? "PICK UP IN STORE" : "Not Available";
 
             return (
-                <div className="purchase-section">
-                    <div className="purchase-item"><button className="add-to-cart">{addToCart}</button></div>
-                    <div className="purchase-item"><button className="pickup-in-store">{pickupInStore}</button></div>      
+                <div>
+                    <div className="purchase-section">
+                        <div className="purchase-item">
+                            <button className="pickup-in-store">{pickupInStore}</button>
+                            <p>find in a store</p>
+                        </div> 
+                        <div className="purchase-item">
+                            <button className="add-to-cart">{addToCart}</button>
+                        </div>
+                    </div>
+                        <div className="return-policy">
+                            <h3>Returns</h3>
+                            <p>This item must be returned within 30 days of the ship date. See <strong>return policy</strong> for details. Prices, promotions, styles and availability may vary by store and online.</p>
+                        </div>
+                        <div className="share-buttons">
+                            <button className="gray-button">ADD TO REGISTRY</button>
+                            <button className="gray-button">ADD TO LIST</button>
+                            <button className="gray-button">SHARE</button>
+                        </div>
+                    
                 </div>
             )
         }

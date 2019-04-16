@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+// import ReactHtmlParser from 'react-html-parser';
 
 class ProductHighlights extends Component {
 

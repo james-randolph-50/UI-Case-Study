@@ -1,7 +1,7 @@
 /* Mobile */
 
 .product-container {
-  margin-top: 22px;
+  align-content: center;
   display: flex;
   flex-direction: column;
 }
@@ -110,12 +110,12 @@
   align-items: center;
   margin: 30px;
   display: inline-block;
+  
 }
 
 .purchase-item {
   font-size: .8em;
-  text-transform: uppercase;
-  
+
 }
 
 .add-to-cart, .pickup-in-store {
@@ -133,11 +133,26 @@
   background-color: black;
 }
 
+.gray-button {
+  font-size: .8em;
+  background-color: #f6f4f5;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin: .5em;
+  width: 30%;
+}
+
+/* Return Policy */
+
+.return-policy {
+  
+}
 
 /* Reviews Styling */
 
 .customer-review-container {
-  background-color: lightgrey;
+  background-color: #F6F4F5;
   margin: 15px;
   padding: 10px;
   display: flex;
@@ -186,4 +201,8 @@
 .review-screen-name {
   font-size: 0.8em;
   color: blue;
+}
+
+.overall-info {
+  font-weight: 500;
 }
