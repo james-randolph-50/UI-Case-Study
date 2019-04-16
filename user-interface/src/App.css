@@ -1,4 +1,50 @@
+/* Mobile */
+
+.product-container {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 600px) {
+  /* Overall container for desktop layout */
+  .product-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* Top level items in flex container */
+.product-info-item {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 640px) {
+  .product-info-item {
+    flex-basis: calc(100% / 2);
+    align-items: flex-start;
+  }
+}
+
+/* ProductOffers, Promos, PurchaseContainer & ProductHighlights */
+.product-info-item.product-group {
+  flex-direction: column;
+}
+
 /* Main Product Info */
+
+.selected-product {
+  min-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-title {
+  font-size: 1.4em;
+  text-align: center;
+  padding-bottom: 2em;
+}
 
 /* Price */
 
@@ -63,6 +109,25 @@
   flex-direction: column;
   align-items: center;
   margin: 30px;
+}
+
+.purchase-item {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+.add-to-cart {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+.pickup-in-store {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2px;
 }
 
 

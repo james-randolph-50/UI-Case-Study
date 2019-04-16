@@ -21,15 +21,15 @@ class PurchaseOptions extends Component {
         render() {
             const pCCode = this.state.data ? parseInt(this.state.data.purchasingChannelCode, 10) : null;
             const addToCartEnabled = Number.isInteger(pCCode) ? (pCCode === 0 || pCCode === 1) : null;
-            const addToCart = addToCartEnabled ? "Add to Cart is Enabled" : "Add to Cart is Disabled";
+            const addToCart = addToCartEnabled ? "Add to Cart" : "Not Available";
         
             const pickupInStoreEnabled = Number.isInteger(pCCode) ? (pCCode === 0 || pCCode === 2) : null;
-            const pickupInStore = pickupInStoreEnabled ? "Pickup in Store is Enabled" : "Pickup in Store is Disabled";
+            const pickupInStore = pickupInStoreEnabled ? "Pickup in Store" : "Not Available";
 
             return (
                 <div className="purchase-section">
-                    <div className="purchase-item">{addToCart}</div>
-                    <div className="purchase-item">{pickupInStore}</div>      
+                    <div className="purchase-item"><button className="add-to-cart">{addToCart}</button></div>
+                    <div className="purchase-item"><button className="pickup-in-store">{pickupInStore}</button></div>      
                 </div>
             )
         }
