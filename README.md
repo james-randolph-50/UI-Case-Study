@@ -19,4 +19,4 @@ or 2.
 - Clone this repo
 - Run `npm install` to install dependencies
 - Run `npm start`
-- Visit htt[://localhost:3000] 
+- Visit http[://localhost:3000] 

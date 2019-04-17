@@ -58,13 +58,13 @@ class Reviews extends Component {
           <div className="pro-con-row">
             <div className="pro-con-label">PRO</div>
             <div className="pro-con-sublabel">most helpful 4-5 star review</div>
-            <hr />
+            <hr className="horizontal-row"></hr>
             {proReview}
           </div>
           <div className="pro-con-row">
             <div className="pro-con-label">CON</div>
             <div className="pro-con-sublabel">most helpful 1-2 star review</div>
-            <hr />
+            <hr className="horizontal-row"></hr>
             {conReview}
           </div>
         </div>

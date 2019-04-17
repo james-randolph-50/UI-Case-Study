@@ -153,7 +153,7 @@
 
 #pickup-in-store {
   background-color: black;
-  margin-right: 3em;
+  margin-right: 1em;
 
 }
 
@@ -253,6 +253,11 @@
   color: black;
 }
 
+.horizontal-row {
+  border-top: 2px solid black;
+  width: 100%;
+}
+
 /* Counter */
 
 .counter {
@@ -264,10 +269,21 @@
 }
 
 .counter-btn {
-  display: inline-block;
   background-color: lightslategrey;
   border: none;
   border-radius: 25px;
   font-size: 1.5em;
   color: white;
+}
+
+.quantity {
+  float:left;
+  padding-right: 2em;
+}
+.decrease {
+  float:left;
+}
+
+.count {
+  float: left;
 }
