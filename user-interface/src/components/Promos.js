@@ -29,9 +29,13 @@ class Promos extends Component {
         const promoList = promos ? this.getPromoList(promos) : null;
     
         return (
+            <div>
+            <hr></hr>
           <ul className="promotions">
             {promoList}
           </ul>
+            <hr></hr>
+          </div>
         )
       }
     
