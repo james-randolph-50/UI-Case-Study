@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-// import Moment from 'react-moment';
+import Moment from 'react-moment';
 
 class Reviews extends Component {
 
@@ -20,11 +20,11 @@ class Reviews extends Component {
   }
 
   getReview = (review => {
-    // const datePosted = (
-    //   // <Moment format="MMMM D, YYYY">
-    //   //   {new Date(review.datePosted)}
-    //   // </Moment>
-    // );
+    const datePosted = (
+      <Moment format="MMMM D, YYYY">
+        {new Date(review.datePosted)}
+      </Moment>
+    );
 
     return (
       <div className="review-details">
@@ -32,8 +32,8 @@ class Reviews extends Component {
         <div className="review-title">{review.title}</div>
         <div className="review-body">{review.review}</div>
         <div className="review-screen-name">
-          {review.screenName}
-          {/* <span className="date-posted">{datePosted}</span> */}
+          {review.screenName} 
+          <span className="date-posted"> {datePosted}</span>
         </div>
       </div>
     );

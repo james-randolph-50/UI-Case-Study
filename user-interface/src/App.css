@@ -230,6 +230,8 @@
 .review-title {
   font-size:1em;
   font-weight: 700;
+  margin-top: .3em;
+  margin-bottom: .5em;
 }
 
 .review-body {
@@ -238,10 +240,34 @@
 }
 
 .review-screen-name {
+  margin-top: .3em;
   font-size: 0.8em;
   color: blue;
 }
 
 .overall-info {
   font-weight: 500;
+}
+
+.date-posted {
+  color: black;
+}
+
+/* Counter */
+
+.counter {
+  display: inline-block;
+  border: 1px grey solid;
+  width: 300px;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.counter-btn {
+  display: inline-block;
+  background-color: lightslategrey;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5em;
+  color: white;
 }

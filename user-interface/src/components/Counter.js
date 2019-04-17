@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import { timingSafeEqual } from 'crypto';
 
 class Counter extends Component {
 
@@ -8,22 +9,24 @@ class Counter extends Component {
     }
 
     decrementCount = () => {
-        this.setState({ count: this.state.count + 1 })
+        this.setState({ count: this.state.count - 1 })
     }
 
     constructor(props) {
         super(props);
             this.state = {
-                count: 0
+                count: 1
             }
         }
 
     render() {
+
         return(
             <div className="counter">
-                <button className="counter-btn" onClick={this.decrementCount}>-</button>
-                <p classname="count">{this.state.count}</p>
-                <button className="counter-btn" onClick={this.incrementCount}>+</button>
+                <p className="quantity">quantity: </p>
+                    <button className="counter-btn" id="decrease" onClick={this.decrementCount}>-</button>
+                    <p classname="count">{this.state.count}</p>
+                    <button className="counter-btn" id="increase" onClick={this.incrementCount}>+</button>
             </div>
         )
     }
