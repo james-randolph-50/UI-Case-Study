@@ -28,6 +28,9 @@ class PurchaseOptions extends Component {
 
             return (
                 <div>
+                    <div className="quantity">
+
+                    </div>
                     <div className="purchase-section">
                             <button className="buy-button" id="pickup-in-store">{pickupInStore}</button>
                             <button className="buy-button" id="add-to-cart">{addToCart}</button> 

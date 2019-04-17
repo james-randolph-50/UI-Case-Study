@@ -8,6 +8,7 @@ import PurchaseOptions from './components/PurchaseOptions';
 import ProductOffers from './components/ProductOffers';
 import SelectedProductContainer from './components/SelectedProductContainer';
 import ImageSlider from './components/ImageSlider';
+import Counter from './components/Counter';
 
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
         <div className="product-info-item product-group">
           <ProductOffers productData={this.state.allData} selected={this.state.selectedIndex} />
           <Promos productData={this.state.allData} selected={this.state.selectedIndex} />
+          <Counter />
           <PurchaseOptions productData={this.state.allData} selected={this.state.selectedIndex} />
           <ProductHighlights productData={this.state.allData} selected={this.state.selectedIndex} />
         </div>
