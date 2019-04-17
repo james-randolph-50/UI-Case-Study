@@ -31,7 +31,7 @@ class PurchaseOptions extends Component {
                     <div className="purchase-section">
                             <button className="buy-button" id="pickup-in-store">{pickupInStore}</button>
                             <button className="buy-button" id="add-to-cart">{addToCart}</button> 
-                            <p>find in a store</p>
+                            <p className="find-in-store">find in a store</p>
                     </div>
                         <div className="return-policy">
                             <h3 className="return-header">returns</h3>

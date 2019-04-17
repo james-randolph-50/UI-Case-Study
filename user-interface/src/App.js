@@ -7,6 +7,8 @@ import Reviews from './components/Reviews';
 import PurchaseOptions from './components/PurchaseOptions';
 import ProductOffers from './components/ProductOffers';
 import SelectedProductContainer from './components/SelectedProductContainer';
+import ImageSlider from './components/ImageSlider';
+
 
 class App extends Component {
 
