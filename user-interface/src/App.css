@@ -3,8 +3,8 @@
   align-content: center;
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  width: 100%;
+  margin: 30px;
+
 }
 @media only screen and (min-width: 600px) {
   /* Overall container for desktop layout */
@@ -261,10 +261,10 @@
 /* Counter */
 
 .counter {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   border: 1px grey solid;
   width: 300px;
-  flex-direction: column;
   margin-bottom: 2em;
 }
 
@@ -279,11 +279,4 @@
 .quantity {
   float:left;
   padding-right: 2em;
-}
-.decrease {
-  float:left;
-}
-
-.count {
-  float: left;
 }
